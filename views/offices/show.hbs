@@ -1,0 +1,49 @@
+<div class="row">
+    <div class="col s12 m8">
+        <h3>office: {{office.title}}
+            {{!-- <small>{{{editIcon office.user user office._id false}}}</small> --}}
+        </h3>
+        <div class="card office">
+            <div class="card-content">
+                Date: <span class="card-title">{{formatDate date 'MMMM Do YYYY, h:mm:ss a'}}</span>
+                DeviceId: <span class="card-title">{{{office.deviceId}}}</span>
+            </div>
+        </div>
+    </div>
+    <div class="col s12 m4">
+        <div class="card center-align">
+            <div class="card-content">
+                <span class="card-title">{{office.user.displayName}}</span>
+                <img src="{{office.user.image}}" class="circle responsive-img img-small">
+            </div>
+            <div class="card-action">
+                <a href="/stories/user/{{office.user._id}}">More From {{office.user.firstName}}</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col s12">
+            <div>
+                <div>
+                    <span>
+                        <span id="deviceCount">0 devices</span>
+                        <select id="listOfDevices" class="select_box"></select>
+                    </span>
+                    <span>Temperature & Humidity Real-time Data</span>
+                    <div>
+                        <canvas id="iotChart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col s12">
+                test this
+        </div>
+    </div>
+
+
+</div>

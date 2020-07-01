@@ -9,9 +9,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" integrity="sha256-2XFplPlrFClt0bIdPgpz8H7ojnk10H69xRqd9+uTShA=" crossorigin="anonymous" /></head>
     <link rel="stylesheet" href="/css/style.css">
+
+    {{{headContent}}}
+
 <body>
+    {{> _header}}
+    {{> _add_btn}}
     <div class="container">
-        {{> _header}}
         {{{body}}}
     </div>
     <!-- Compiled and minified JavaScript -->
@@ -20,7 +24,7 @@
     
     <script>
         M.Sidenav.init(document.querySelector('.sidenav'))
-        {{!-- M.FormSelect.init(document.querySelector('#status'))
-        CKEDITOR.replace('body'), {plugins: 'wysiwygarea, toolbar, basicstyles, link'} --}}
+        M.FormSelect.init(document.querySelector('#status'))
+        {{!-- CKEDITOR.replace('body'), {plugins: 'wysiwygarea, toolbar, basicstyles, link'} --}}
     </script></body>
 </html>
