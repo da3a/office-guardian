@@ -91,6 +91,9 @@ $(document).ready(() => {
             display: true,
           },
           position: 'left',
+          ticks:{
+            precision: 0
+          }
         },
         {
           id: 'Humidity',
