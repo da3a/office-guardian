@@ -57,7 +57,7 @@ router.get('/:id', ensureAuth, async (req, res) => {
 
 
     res.render('offices/show', {
-      headContent,
+//      headContent,
       office,
 
     })
